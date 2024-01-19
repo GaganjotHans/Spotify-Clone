@@ -147,6 +147,7 @@ body {
   width: 96%;
   padding: 12px;
   width: 71vw;
+  height: 40px;
 }
 
 .songButtons {
@@ -183,4 +184,26 @@ body {
 .playNow span{
   font-size: 10px;
   width: 64px;
+}
+
+.seekBar{
+  height: 2px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  position: absolute;
+  bottom: 5px;
+  width: 97%;
+  margin-bottom: 5px;
+}
+
+.circle{
+  width: 15px;
+  height: 15px;
+  border-radius: 15px;
+  background-color: white;
+  position: relative;
+  bottom: 7px;
+  left: 0%;
+  transition: left 0.5s;
 }
