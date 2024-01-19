@@ -147,7 +147,7 @@ body {
   width: 96%;
   padding: 12px;
   width: 71vw;
-  height: 40px;
+  height: 50px;
 }
 
 .songButtons {
@@ -187,7 +187,7 @@ body {
 }
 
 .seekBar{
-  height: 2px;
+  height: 4px;
   border: 1px solid white;
   border-radius: 5px;
   background-color: white;
@@ -195,6 +195,7 @@ body {
   bottom: 5px;
   width: 97%;
   margin-bottom: 5px;
+  cursor: pointer;
 }
 
 .circle{
@@ -206,4 +207,21 @@ body {
   bottom: 7px;
   left: 0%;
   transition: left 0.5s;
+}
+
+.songButtons div{
+  cursor: pointer;
+}
+
+.aboveBar{
+  justify-content: space-between;
+  align-items: center;
+}
+.songInfo, .songTime{
+  font-family: sans-serif !important;
+  color: rgb(192, 192, 192);
+  width: 250px;
+}
+.songTime{
+  text-align: end;
 }
