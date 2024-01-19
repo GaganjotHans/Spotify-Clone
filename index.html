@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify - Web Player: Music for everyone</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/utility.css" />
+  </head>
+  <body>
+    <div class="container flex bg-black">
+      <div class="left">
+        <div class="home bg-grey rounded m-1 p-1">
+          <img src="images/logo.svg" class="invert" alt="logo" />
+
+          <ul>
+            <li><img src="images/home.svg" alt="home" class="invert"/>Home</li>
+            <li><img src="images/search.svg" alt="search" class="invert"/>Search</li>
+          </ul>
+        </div>
+        <div class="library bg-grey rounded m-1 p-1">
+          <div class="heading">
+            <img src="images/playlist.svg" class="invert" alt="">
+            <h2>
+            Your library
+            </h2>
+          </div>
+          <div class="footer">
+              <div><a href="https://www.spotify.com/ca-en/legal/"  ><span >Legal</span></a></div>
+              <div><a href="https://www.spotify.com/ca-en/privacy/"  ><span >Privacy Center</span></a></div>
+              <div><a href="https://www.spotify.com/ca-en/legal/privacy-policy/"  ><span >Privacy Policy</span></a></div>
+              <div><a href="https://www.spotify.com/ca-en/legal/cookies-policy/"  ><span >Cookies</span></a></div>
+              <div><a href="https://www.spotify.com/ca-en/legal/privacy-policy/#s3"  ><span >About Ads</span></a></div>
+              <div><a href="https://www.spotify.com/ca-en/accessibility/"  ><span >Accessibility</span></a></div>            
+          </div>
+        </div>
+      </div>
+      <div class="right bg-grey rounded">
+        <div class="header">
+          <div class="nav">
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/arrow-left-01-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+              <path d="M15 6C15 6 9.00001 10.4189 9 12C8.99999 13.5812 15 18 15 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/arrow-right-01-stroke-rounded.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                <path d="M9.00005 6C9.00005 6 15 10.4189 15 12C15 13.5812 9 18 9 18" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+          </div>
+          <div class="buttons">
+            <button class="signupBtn">Sign up</button>
+            <button class="loginBtn">Log in</button>
+          </div>
+        </div>
+        <div class="spotifyPlaylists">
+          <h2>Spotify Playlists</h2>
+          <div class="cardContainer">
+            <div class="card">
+              <div class="play invert"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/play-circle-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                <circle cx="12" cy="12" r="10" stroke="#000000" stroke-width="2"></circle>
+                <path d="M9.5 16V8L16 12L9.5 16Z" stroke="#000000" stroke-width="2" stroke-linejoin="round"></path>
+                </svg></div>
+              <img src="https://i.scdn.co/image/ab67706f000000026e515187c071e45918e9f0de" alt="">
+              <h4 class="pt-1">Dinner with Friends</h4>
+              <p class="pt-1">Hits to boost your mood and fill you with happiness!</p>
+            </div>
+
+          </div>
+          <div class="playbar">
+            <div class="songInfo"></div>
+            <div class="songButtons flex justify-center">
+              <div class="prevBtn invert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/previous-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                  <path d="M20 19V5L8 12L20 19Z" stroke="#000000" stroke-width="2" stroke-linejoin="round"></path>
+                  <path d="M4 4V20" stroke="#000000" stroke-width="2"></path>
+                  </svg>
+              </div>
+              <div class="playBtn invert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/play-circle-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                  <circle cx="12" cy="12" r="10" stroke="#000000" stroke-width="2"></circle>
+                  <path d="M9.5 16V8L16 12L9.5 16Z" stroke="#000000" stroke-width="2" stroke-linejoin="round"></path>
+                  </svg>
+              </div>
+              <div class="nextBtn invert">
+                <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24" fill="none" class="injected-svg" data-src="/icons/next-stroke-sharp.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img" color="#000000">
+                  <path d="M4 19V5L16 12L4 19Z" stroke="#000000" stroke-width="2" stroke-linejoin="round"></path>
+                  <path d="M20 4V20" stroke="#000000" stroke-width="2"></path>
+                  </svg>
+              </div>
+            </div>
+            <div class="songTime"></div>
+      
+           
+              
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
+
