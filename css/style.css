@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
+
+:root{
+  --a:0;
+}
 * {
   margin: 0px;
   padding: 0px;
@@ -93,6 +97,12 @@ body {
   border-radius: 5px;
   background-color: #252525;
   position: relative;
+  transition: all 1s;
+}
+.card:hover{
+  background-color: rgb(77, 77, 77);
+  cursor: pointer;
+  --a:1;
 }
 
 .card img {
@@ -104,14 +114,16 @@ body {
   position: absolute;
   top: 150px;
   right: 20px;
-  opacity: 1;
+  opacity: var(--a);
   transition: all 1s ease-out;
+
 }
 .card p {
   font-size: 13px;
   font-family: sans-serif;
   color: grey;
 }
+
 
 .signupBtn {
   background-color: rgb(46, 46, 46);
@@ -178,6 +190,7 @@ body {
   font-family: sans-serif !important;
   font-size: 13px;
   width: 344px;
+  word-break: break-all;
 }
 
 .playNow span {
@@ -216,15 +229,19 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+
 .songInfo,
 .songTime {
   font-family: sans-serif !important;
   color: rgb(192, 192, 192);
+}
+.songInfo{
   width: 250px;
+
 }
-.songTime {
+/* .songTime {
   text-align: end;
-}
+} */
 .hamburger {
   display: none;
 }
@@ -235,7 +252,16 @@ body {
 .close {
   display: none;
 }
+.volTime{
+  gap: 15px;
+}
 
+.volume{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
 @media (max-width: 1300px) {
   .left {
     position: absolute;
@@ -251,6 +277,7 @@ body {
 
   .playbar {
     width: calc(100vw - 50px);
+    height: inherit;
   }
   .seekBar {
     width: calc(100vw - 50px);
@@ -271,8 +298,17 @@ body {
     color: rgb(192, 192, 192);
     font-size: 12px;
   }
-  .aboveBar{
+  /* .aboveBar{
     padding-top: 5px;
+  } */
+
+  .volTime{
+    flex-direction: column-reverse;
+    gap: 3px;
+    padding: 10px 5px;
+  }
+  .volume{
+    flex-direction: column;
   }
 
 
