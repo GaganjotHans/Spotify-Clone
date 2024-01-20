@@ -85,7 +85,7 @@ body {
   flex-wrap: wrap;
   margin-top: 30px;
   max-height: 68vh;
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 .card {
   width: 180px;
@@ -147,24 +147,24 @@ body {
   width: 96%;
   padding: 12px;
   width: 71vw;
-  height: 50px;
+  height: 60px;
 }
 
 .songButtons {
   gap: 16px;
 }
 
-.songList{
+.songList {
   height: 545px;
   overflow: auto;
   margin-bottom: 25px;
 }
-.songList ul{
-  padding : 0px 10px;
+.songList ul {
+  padding: 0px 10px;
 }
 
-.songList ul li{
-  list-style-type:decimal;
+.songList ul li {
+  list-style-type: decimal;
   display: flex;
   justify-content: space-between;
   gap: 14px;
@@ -173,20 +173,19 @@ body {
   padding: 13px 16px;
   border-radius: 5px;
   margin-bottom: 15px;
-
 }
-.songList .info{
+.songList .info {
   font-family: sans-serif !important;
   font-size: 13px;
   width: 344px;
 }
 
-.playNow span{
+.playNow span {
   font-size: 10px;
   width: 64px;
 }
 
-.seekBar{
+.seekBar {
   height: 4px;
   border: 1px solid white;
   border-radius: 5px;
@@ -198,7 +197,7 @@ body {
   cursor: pointer;
 }
 
-.circle{
+.circle {
   width: 15px;
   height: 15px;
   border-radius: 15px;
@@ -209,19 +208,83 @@ body {
   transition: left 0.5s;
 }
 
-.songButtons div{
+.songButtons div {
   cursor: pointer;
 }
 
-.aboveBar{
+.aboveBar {
   justify-content: space-between;
   align-items: center;
 }
-.songInfo, .songTime{
+.songInfo,
+.songTime {
   font-family: sans-serif !important;
   color: rgb(192, 192, 192);
   width: 250px;
 }
-.songTime{
+.songTime {
   text-align: end;
+}
+.hamburger {
+  display: none;
+}
+
+.hamburgerContainer {
+  gap: 20px;
+}
+.close {
+  display: none;
+}
+
+@media (max-width: 1300px) {
+  .left {
+    position: absolute;
+    left: -120%;
+    transition: all 1s;
+    z-index: 1;
+    width: 370px;
+    background-color: black;
+  }
+  .right {
+    width: 100vw;
+  }
+
+  .playbar {
+    width: calc(100vw - 50px);
+  }
+  .seekBar {
+    width: calc(100vw - 50px);
+  }
+  .hamburger {
+    display: block;
+  }
+
+  .close {
+    display: block;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+  }
+  .songInfo,
+  .songTime {
+    font-family: sans-serif !important;
+    color: rgb(192, 192, 192);
+    font-size: 12px;
+  }
+  .aboveBar{
+    padding-top: 5px;
+  }
+
+
+  svg {
+    width: 24px;
+    height: 24px;
+  }
+  .card{
+    width: 90vw;
+  }
+  .cardContainer{
+    justify-content: center;
+  }
+
 }

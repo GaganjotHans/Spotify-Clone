@@ -122,6 +122,19 @@ async function main() {
       percent + "%";
       currentSong.currentTime = ((currentSong.duration)*percent)/100
   });
+
+
+  //Add an Event listener for hamburger
+  document.querySelector(".hamburger").addEventListener("click",()=>{
+    document.querySelector(".left").style.left = "0";
+  })
+
+   //Add an Event listener for closing hamburger
+   document.querySelector(".close").addEventListener("click",()=>{
+    document.querySelector(".left").style.left = "-120%";
+  })
 }
+
+
 
 main();
