@@ -129,7 +129,7 @@ async function displayAlbums() {
         </svg>
       </div>
       <img
-        src="/songs/${folder}/cover.jpeg"
+        src="${response.imageUrl}"
         alt=""
       />
       <h4 class="pt-1">${response.title}</h4>
@@ -139,6 +139,9 @@ async function displayAlbums() {
     </div>`;
     }
   }
+
+      //src="/songs/${folder}/cover.jpeg"
+  
   //Load the playlist whenever card is clicked
   Array.from(document.getElementsByClassName("card")).forEach((e) => {
     e.addEventListener("click", async (item) => {

@@ -112,7 +112,7 @@ body {
 
 .play {
   position: absolute;
-  top: 150px;
+  bottom: 90px;
   right: 20px;
   opacity: var(--a);
   transition: all 1s ease-out;
